@@ -39,5 +39,6 @@ namespace hoangngocthe_2123110488.Model
 
         // Navigation
         public ICollection<ChatMessage> ChatMessages { get; set; }
+        public virtual ICollection<StreamTagMapping> StreamTagMappings { get; set; }
     }
 }
