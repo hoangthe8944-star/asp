@@ -24,5 +24,6 @@ namespace hoangngocthe_2123110488.Model
         public string? Message { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public virtual User User { get; set; }
     }
 }

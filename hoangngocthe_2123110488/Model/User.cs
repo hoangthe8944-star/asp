@@ -24,7 +24,7 @@ namespace hoangngocthe_2123110488.Model
         [Required]
         public string Role { get; set; } // viewer / streamer / admin
 
-        public bool Status { get; set; } = true;
+        public string Status { get; set; } 
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime? UpdatedAt { get; set; }
