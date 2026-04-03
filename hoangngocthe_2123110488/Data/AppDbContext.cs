@@ -57,112 +57,115 @@ namespace hoangngocthe_2123110488.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // ── Composite PK ──────────────────────────────
+            // ── UserRole: composite PK ────────────────────────
             modelBuilder.Entity<UserRole>()
                 .HasKey(ur => new { ur.UserId, ur.RoleId });
 
+            modelBuilder.Entity<UserRole>()
+                .HasOne(ur => ur.User)
+                .WithMany()
+                .HasForeignKey(ur => ur.UserId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<UserRole>()
+                .HasOne(ur => ur.Role)
+                .WithMany()
+                .HasForeignKey(ur => ur.RoleId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            // ── StreamTagMapping: composite PK ────────────────
             modelBuilder.Entity<StreamTagMapping>()
-                .HasKey(stm => new { stm.StreamId, stm.TagId });
+                .HasKey(s => new { s.StreamId, s.TagId });
 
-            //----------------------------------------------------
-            modelBuilder.Entity<Follow>(e =>
-            {
-                // Cấu hình quan hệ cho người đi theo dõi
-                e.HasOne(f => f.Follower)
-                 .WithMany()
-                 .HasForeignKey(f => f.FollowerId)
-                 .OnDelete(DeleteBehavior.Restrict); // Dùng Restrict để tránh lỗi Multiple Cascade Path
+            // ── ChatMessage ───────────────────────────────────
+            modelBuilder.Entity<ChatMessage>()
+                .HasOne(c => c.User)
+                .WithMany()
+                .HasForeignKey(c => c.UserId)
+                .OnDelete(DeleteBehavior.NoAction);
 
-                // Cấu hình quan hệ cho người được theo dõi
-                e.HasOne(f => f.Following)
-                 .WithMany()
-                 .HasForeignKey(f => f.FollowingId)
-                 .OnDelete(DeleteBehavior.Restrict);
-            });
-            // ── User ──────────────────────────────────────
-            modelBuilder.Entity<User>(e =>
-            {
-                e.HasIndex(u => u.Email).IsUnique();
-                e.HasIndex(u => u.Username).IsUnique();
-                e.Property(u => u.Role).HasDefaultValue("viewer");
-                e.Property(u => u.Status).HasDefaultValue("active");
-                e.Property(u => u.CreatedAt).HasDefaultValueSql("GETUTCDATE()");
-                e.Property(u => u.UpdatedAt).HasDefaultValueSql("GETUTCDATE()");
-            });
+            modelBuilder.Entity<ChatMessage>()
+                .HasOne(c => c.Stream)
+                .WithMany()
+                .HasForeignKey(c => c.StreamId)
+                .OnDelete(DeleteBehavior.NoAction);
 
-            // ── UserProfile → User ────────────────────────
-            modelBuilder.Entity<UserProfile>()
+            // ── ChatBan ───────────────────────────────────────
+            modelBuilder.Entity<ChatBan>()
                 .HasOne<User>()
-                .WithOne()
-                .HasForeignKey<UserProfile>(p => p.UserId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .WithMany()
+                .HasForeignKey(c => c.UserId)
+                .OnDelete(DeleteBehavior.NoAction);
 
-            // ── Stream → User (Streamer) ──────────────────
-            modelBuilder.Entity<hoangngocthe_2123110488.Model.Stream>(e =>
-            {
-                e.HasOne<User>()
-                 .WithMany()
-                 .HasForeignKey(s => s.StreamerId)
-                 .OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<ChatBan>()
+                .HasOne<hoangngocthe_2123110488.Model.Stream>()
+                .WithMany()
+                .HasForeignKey(c => c.StreamId)
+                .OnDelete(DeleteBehavior.NoAction);
 
-                e.Property(s => s.Status).HasDefaultValue("offline");
-                e.Property(s => s.ViewersCount).HasDefaultValue(0);
-            });
+            // ── Follow: 2 FK đều trỏ về User ─────────────────
+            modelBuilder.Entity<Follow>()
+                .HasOne(f => f.Follower)
+                .WithMany()
+                .HasForeignKey(f => f.FollowerId)
+                .OnDelete(DeleteBehavior.NoAction);
 
-            // ── Follow (self-referencing) ─────────────────
-            modelBuilder.Entity<Follow>(e =>
-            {
-                e.HasIndex(f => new { f.FollowerId, f.FollowingId }).IsUnique();
-                e.Property(f => f.CreatedAt).HasDefaultValueSql("GETUTCDATE()");
-            });
+            modelBuilder.Entity<Follow>()
+                .HasOne(f => f.Following)
+                .WithMany()
+                .HasForeignKey(f => f.FollowingId)
+                .OnDelete(DeleteBehavior.NoAction);
 
-            // ── ChatMessage ───────────────────────────────
-            modelBuilder.Entity<ChatMessage>(e =>
-            {
-                e.Property(c => c.Type).HasDefaultValue("text");
-                e.Property(c => c.CreatedAt).HasDefaultValueSql("GETUTCDATE()");
-            });
+            // ── Donation ──────────────────────────────────────
+            modelBuilder.Entity<Donation>()
+                .HasOne(d => d.User)
+                .WithMany()
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.NoAction);
 
-            // ── Donation ──────────────────────────────────
-            modelBuilder.Entity<Donation>(e =>
-            {
-                e.Property(d => d.Amount).HasColumnType("decimal(18,2)");
-                e.Property(d => d.CreatedAt).HasDefaultValueSql("GETUTCDATE()");
-            });
+            modelBuilder.Entity<Donation>()
+                .HasOne<User>()
+                .WithMany()
+                .HasForeignKey(d => d.StreamerId)
+                .OnDelete(DeleteBehavior.NoAction);
 
-            // ── SubscriptionPlan ──────────────────────────
-            modelBuilder.Entity<SubscriptionPlan>(e =>
-            {
-                e.Property(p => p.Price).HasColumnType("decimal(18,2)");
-            });
+            // ── Subscription: 2 FK đều trỏ về User ───────────
+            modelBuilder.Entity<Subscription>()
+                .HasOne(s => s.User)
+                .WithMany()
+                .HasForeignKey(s => s.UserId)
+                .OnDelete(DeleteBehavior.NoAction);
 
-            // ── Transaction ───────────────────────────────
-            modelBuilder.Entity<Transaction>(e =>
-            {
-                e.Property(t => t.Amount).HasColumnType("decimal(18,2)");
-                e.Property(t => t.CreatedAt).HasDefaultValueSql("GETUTCDATE()");
-            });
+            modelBuilder.Entity<Subscription>()
+                .HasOne(s => s.Streamer)
+                .WithMany()
+                .HasForeignKey(s => s.StreamerId)
+                .OnDelete(DeleteBehavior.NoAction);
 
-            // ── Notification ──────────────────────────────
-            modelBuilder.Entity<Notification>(e =>
-            {
-                e.Property(n => n.IsRead).HasDefaultValue(false);
-                e.Property(n => n.CreatedAt).HasDefaultValueSql("GETUTCDATE()");
-            });
+            // ── Subscription: bỏ PlanId thừa ─────────────────
+            // Model có cả PlanId lẫn SubscriptionPlanId → ignore PlanId
+            modelBuilder.Entity<Subscription>()
+                .Ignore(s => s.PlanId);
 
-            // ── Report ────────────────────────────────────
-            modelBuilder.Entity<Report>(e =>
-            {
-                e.Property(r => r.Status).HasDefaultValue("pending");
-                e.Property(r => r.CreatedAt).HasDefaultValueSql("GETUTCDATE()");
-            });
+            // ── Notification ──────────────────────────────────
+            modelBuilder.Entity<Notification>()
+                .HasOne<User>()
+                .WithMany()
+                .HasForeignKey(n => n.UserId)
+                .OnDelete(DeleteBehavior.NoAction);
 
-            // ── Log ───────────────────────────────────────
-            modelBuilder.Entity<Log>(e =>
-            {
-                e.Property(l => l.CreatedAt).HasDefaultValueSql("GETUTCDATE()");
-            });
+            // ── decimal columns ───────────────────────────────
+            modelBuilder.Entity<Donation>()
+                .Property(d => d.Amount)
+                .HasColumnType("decimal(18,2)");
 
+            modelBuilder.Entity<SubscriptionPlan>()
+                .Property(p => p.Price)
+                .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<Transaction>()
+                .Property(t => t.Amount)
+                .HasColumnType("decimal(18,2)");
         }
     }
 }

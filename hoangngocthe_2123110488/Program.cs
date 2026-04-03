@@ -74,12 +74,17 @@ builder.Services.AddScoped<ISubscriptionService, SubscriptionService>();
 builder.Services.AddSignalR();
 
 // ── CORS ──────────────────────────────────────────────────
+// Thành đoạn mới (chỉ định đúng origin React):
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
-        policy.AllowAnyOrigin()
+        policy.WithOrigins(
+                "http://localhost:5173",   // Vite dev server
+                "https://localhost:5173"
+              )
               .AllowAnyMethod()
-              .AllowAnyHeader());
+              .AllowAnyHeader()
+              .AllowCredentials());        // Cần cho SignalR
 });
 
 // ── CONTROLLERS + SWAGGER ─────────────────────────────────
@@ -106,9 +111,39 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
+//---------------------------------------------------------------
+// Đăng ký AutoMapper
+builder.Services.AddAutoMapper(typeof(MappingProfile));
+
+// Đăng ký Repository và Service
+builder.Services.AddScoped<IReportRepository, ReportRepository>();
+builder.Services.AddScoped<IReportService, ReportService>();
+
+// CORS (Nếu bạn chạy React ở cổng khác)
+builder.Services.AddCors(options => {
+    options.AddPolicy("AllowAll", b => b.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+});
+
+//  -----------------------------category--------------------------------
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 // ─────────────────────────────────────────────────────────
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        var context = services.GetRequiredService<AppDbContext>();
+        DbInitializer.Initialize(context);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine("Lỗi khởi tạo dữ liệu: " + ex.Message);
+    }
+}
 
 if (app.Environment.IsDevelopment())
 {
