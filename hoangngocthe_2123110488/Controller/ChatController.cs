@@ -40,5 +40,43 @@ namespace hoangngocthe_2123110488.Controller
             }
             catch (Exception ex) { return BadRequest(new { message = ex.Message }); }
         }
+        // GET: api/chat/blacklist
+        [HttpGet("blacklist")]
+        public async Task<IActionResult> GetBlacklist()
+        {
+            var keywords = await _chatService.GetAllKeywordsAsync();
+            return Ok(keywords);
+        }
+
+        // POST: api/chat/blacklist
+        [HttpPost("blacklist")]
+        public async Task<IActionResult> AddBlacklist([FromBody] KeywordRequest request)
+        {
+            if (string.IsNullOrEmpty(request.Word)) return BadRequest("Word is required");
+
+            var newKeyword = new BlacklistKeyword
+            {
+                Word = request.Word.ToLower().Trim(),
+                AddedAt = DateTime.UtcNow
+            };
+
+            await _chatService.AddKeywordAsync(newKeyword);
+            return Ok(newKeyword);
+        }
+
+        // DELETE: api/chat/blacklist/5
+        [HttpDelete("blacklist/{id}")]
+        public async Task<IActionResult> DeleteBlacklist(int id)
+        {
+            await _chatService.DeleteKeywordAsync(id);
+            return Ok();
+        }
+    }
+
+    // Class phụ để nhận dữ liệu từ React gửi lên
+    public class KeywordRequest
+    {
+        public string Word { get; set; }
     }
 }
+

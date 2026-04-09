@@ -26,6 +26,7 @@ namespace hoangngocthe_2123110488.Data
         // ── CHAT ──────────────────────────────────────────
         public DbSet<ChatMessage> ChatMessages { get; set; }
         public DbSet<ChatBan> ChatBans { get; set; }
+        public DbSet<BlacklistKeyword> BlacklistKeywords { get; set; }
 
         // ── SOCIAL ────────────────────────────────────────
         public DbSet<Follow> Follows { get; set; }

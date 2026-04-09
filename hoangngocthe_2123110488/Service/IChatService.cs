@@ -1,6 +1,7 @@
 ﻿using hoangngocthe_2123110488.DTOs;
 using hoangngocthe_2123110488.Model;
 using hoangngocthe_2123110488.Repository;
+using Microsoft.EntityFrameworkCore;
 
 namespace hoangngocthe_2123110488.Service
 {
@@ -10,12 +11,18 @@ namespace hoangngocthe_2123110488.Service
         Task<IEnumerable<ChatMessageDto>> GetMessagesAsync(int streamId, int take = 50);
         Task BanUserAsync(int bannedBy, ChatBanRequest request);
         Task<bool> IsUserBannedAsync(int streamId, int userId);
+
+        // Chỉ giữ lại 3 hàm này cho Blacklist
+        Task<IEnumerable<BlacklistKeyword>> GetAllKeywordsAsync();
+        Task AddKeywordAsync(BlacklistKeyword keyword);
+        Task DeleteKeywordAsync(int id);
     }
 
     public class ChatService : IChatService
     {
         private readonly IChatRepository _chatRepo;
         private readonly IUserRepository _userRepo;
+
 
         public ChatService(IChatRepository chatRepo, IUserRepository userRepo)
         {
@@ -83,5 +90,21 @@ namespace hoangngocthe_2123110488.Service
 
         public async Task<bool> IsUserBannedAsync(int streamId, int userId)
             => await _chatRepo.IsUserBannedAsync(streamId, userId);
+
+        public async Task<IEnumerable<BlacklistKeyword>> GetAllKeywordsAsync()
+        {
+            return await _chatRepo.GetAllKeywordsAsync();
+        }
+
+        public async Task AddKeywordAsync(BlacklistKeyword keyword)
+        {
+            await _chatRepo.AddKeywordAsync(keyword);
+        }
+
+        public async Task DeleteKeywordAsync(int id)
+        {
+            await _chatRepo.DeleteKeywordAsync(id);
+        }
     }
+
 }
