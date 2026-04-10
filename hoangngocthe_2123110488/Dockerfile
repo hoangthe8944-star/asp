@@ -1,27 +1,23 @@
 ﻿# Stage 1: Build
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /src
-
-# Copy csproj và restore (thay đúng tên file .csproj của bạn)
-COPY ["hoangngocthe_2123110488/hoangngocthe_2123110488.csproj", "hoangngocthe_2123110488/"]
-RUN dotnet restore "hoangngocthe_2123110488/hoangngocthe_2123110488.csproj"
-
-# Copy toàn bộ code và build
-COPY . .
-WORKDIR "/src/hoangngocthe_2123110488"
-RUN dotnet build "hoangngocthe_2123110488.csproj" -c Release -o /app/build
-
-# Stage 2: Publish
-FROM build AS publish
-RUN dotnet publish "hoangngocthe_2123110488.csproj" -c Release -o /app/publish /p:UseAppHost=false
-
-# Stage 3: Final image
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
 
-# Cấu hình Port để Render có thể nhận diện
+# Copy toàn bộ code vào container
+COPY . .
+# Restore các thư viện
+RUN dotnet restore
+# Build và Publish ra thư mục 'out'
+RUN dotnet publish -c Release -o out
+
+# Stage 2: Run
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
+WORKDIR /app
+# Copy kết quả build từ stage 1 sang stage 2
+COPY --from=build /app/out .
+
+# Cấu hình Port cho Render (Render dùng port 8080 mặc định cho Docker)
 ENV ASPNETCORE_URLS=http://+:8080
 EXPOSE 8080
 
+# Thay hoangngocthe_2123110488.dll bằng tên project của bạn
 ENTRYPOINT ["dotnet", "hoangngocthe_2123110488.dll"]
