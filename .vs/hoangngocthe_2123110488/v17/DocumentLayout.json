@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|c:\\users\\ngoc the\\desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|solutionrelative:hoangngocthe_2123110488\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|c:\\users\\ngoc the\\desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|solutionrelative:hoangngocthe_2123110488\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|c:\\users\\ngoc the\\desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|solutionrelative:hoangngocthe_2123110488\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|c:\\users\\ngoc the\\desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|solutionrelative:hoangngocthe_2123110488\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|c:\\users\\ngoc the\\desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|solutionrelative:hoangngocthe_2123110488\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|c:\\users\\ngoc the\\desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|solutionrelative:hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|c:\\users\\ngoc the\\desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|solutionrelative:hoangngocthe_2123110488\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|c:\\users\\ngoc the\\desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\service\\isettingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -227,10 +239,6 @@
       "RelativeMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|solutionrelative:hoangngocthe_2123110488\\service\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Migrations\\20260410011816_updatecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:hoangngocthe_2123110488\\Migrations\\20260410011816_updatecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|c:\\users\\ngoc the\\desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\controller\\donationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|solutionrelative:hoangngocthe_2123110488\\controller\\donationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -375,18 +383,6 @@
       "RelativeMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|solutionrelative:hoangngocthe_2123110488\\hoangngocthe_2123110488.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|c:\\users\\ngoc the\\desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|solutionrelative:hoangngocthe_2123110488\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|c:\\users\\ngoc the\\desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|solutionrelative:hoangngocthe_2123110488\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|c:\\users\\ngoc the\\desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|solutionrelative:hoangngocthe_2123110488\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Migrations\\20260403015152_updatedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:hoangngocthe_2123110488\\Migrations\\20260403015152_updatedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -493,6 +489,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|c:\\users\\ngoc the\\desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\migrations\\20260409172708_addblacklisttable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|solutionrelative:hoangngocthe_2123110488\\migrations\\20260409172708_addblacklisttable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|c:\\users\\ngoc the\\desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\migrations\\20260410011816_updatecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B5BA89-5557-4951-85D8-49F49305B562}|hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj|solutionrelative:hoangngocthe_2123110488\\migrations\\20260410011816_updatecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -502,7 +502,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -510,7 +510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Data\\AppDbContext.cs",
@@ -519,12 +519,82 @@
               "ViewState": "AgIAAB0AAAAAAAAAAAAEwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-20T02:44:52.025Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Properties\\launchSettings.json",
+              "RelativeToolTip": "hoangngocthe_2123110488\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-13T01:09:38.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ISettingService.cs",
+              "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\ISettingService.cs",
+              "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Service\\ISettingService.cs",
+              "ToolTip": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\ISettingService.cs",
+              "RelativeToolTip": "hoangngocthe_2123110488\\Service\\ISettingService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAwwC4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T03:44:59.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ILogService.cs",
+              "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\ILogService.cs",
+              "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Service\\ILogService.cs",
+              "ToolTip": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\ILogService.cs",
+              "RelativeToolTip": "hoangngocthe_2123110488\\Service\\ILogService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAswDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T03:45:55.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Program.cs",
+              "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Program.cs",
+              "ToolTip": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Program.cs",
+              "RelativeToolTip": "hoangngocthe_2123110488\\Program.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAcwJgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T01:27:57.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "hoangngocthe_2123110488\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\WeatherForecast.cs",
+              "RelativeToolTip": "hoangngocthe_2123110488\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T01:27:59.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Dockerfile",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Dockerfile",
@@ -536,51 +606,21 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ILogService.cs",
-              "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\ILogService.cs",
-              "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Service\\ILogService.cs",
-              "ToolTip": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\ILogService.cs",
-              "RelativeToolTip": "hoangngocthe_2123110488\\Service\\ILogService.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAswDIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T03:45:55.739Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ISettingService.cs",
-              "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\ISettingService.cs",
-              "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Service\\ISettingService.cs",
-              "ToolTip": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\ISettingService.cs",
-              "RelativeToolTip": "hoangngocthe_2123110488\\Service\\ISettingService.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAwwC4AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T03:44:59.448Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\appsettings.json",
+              "RelativeDocumentMoniker": "hoangngocthe_2123110488\\appsettings.json",
+              "ToolTip": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\appsettings.json",
+              "RelativeToolTip": "hoangngocthe_2123110488\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-13T01:28:07.672Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Program.cs",
-              "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Program.cs",
-              "ToolTip": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Program.cs",
-              "RelativeToolTip": "hoangngocthe_2123110488\\Program.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAAAKEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T01:27:57.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "hoangngocthe_2123110488.csproj",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj",
@@ -588,12 +628,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\hoangngocthe_2123110488.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-20T02:44:25.326Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-20T02:44:25.326Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\IAuthService.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Service\\IAuthService.cs",
@@ -601,16 +640,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Service\\IAuthService.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAawEQAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T16:09:01.979Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "WhenOpened": "2026-04-02T16:09:01.979Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "IAnalyticsService.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\IAnalyticsService.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Service\\IAnalyticsService.cs",
@@ -618,12 +652,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Service\\IAnalyticsService.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAzwBoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T03:32:35.035Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T03:32:35.035Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "LogsController.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Controller\\LogsController.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Controller\\LogsController.cs",
@@ -631,12 +664,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Controller\\LogsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T03:47:08.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T03:47:08.082Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "SettingsController.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Controller\\SettingsController.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Controller\\SettingsController.cs",
@@ -644,12 +676,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Controller\\SettingsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T03:46:32.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T03:46:32.183Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "LogDto.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\LogDto.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\LogDto.cs",
@@ -657,12 +688,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\LogDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T03:45:33.797Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T03:45:33.797Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "SettingDto.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\SettingDto.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\SettingDto.cs",
@@ -670,12 +700,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\SettingDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T03:44:36.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T03:44:36.432Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "VideosController.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Controller\\VideosController.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Controller\\VideosController.cs",
@@ -683,12 +712,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Controller\\VideosController.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAAAEMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T03:42:04.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T03:42:04.628Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "IVideoService.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\IVideoService.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Service\\IVideoService.cs",
@@ -696,12 +724,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Service\\IVideoService.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAowFwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T03:41:03.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T03:41:03.66Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "VideoDto.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\VideoDto.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\VideoDto.cs",
@@ -709,12 +736,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\VideoDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T03:40:34.545Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T03:40:34.545Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Video.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\Video.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\Video.cs",
@@ -722,12 +748,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Model\\Video.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T16:36:06.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T16:36:06.872Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "StreamerAnalyticsDto.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\StreamerAnalyticsDto.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\StreamerAnalyticsDto.cs",
@@ -735,12 +760,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\StreamerAnalyticsDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T03:30:53.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T03:30:53.516Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "StreamViewDto.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\StreamViewDto.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\StreamViewDto.cs",
@@ -748,12 +772,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\StreamViewDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T03:29:29.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T03:29:29.246Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "AnalyticsController.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Controller\\AnalyticsController.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Controller\\AnalyticsController.cs",
@@ -761,12 +784,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Controller\\AnalyticsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T03:33:26.077Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T03:33:26.077Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "StreamStatsDto.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\StreamStatsDto.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\StreamStatsDto.cs",
@@ -774,12 +796,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\StreamStatsDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:48:40.307Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T15:48:40.307Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "StreamTagDto.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\StreamTagDto.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\StreamTagDto.cs",
@@ -787,12 +808,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\StreamTagDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:44:21.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T15:44:21.182Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "SubscriptionDto.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\SubscriptionDto.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\SubscriptionDto.cs",
@@ -800,12 +820,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\SubscriptionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:47:39.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T15:47:39.634Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "StreamDto.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\StreamDto.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\StreamDto.cs",
@@ -813,12 +832,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\StreamDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:43:04.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T15:43:04.688Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "IBanRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Repository\\IBanRepository.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Repository\\IBanRepository.cs",
@@ -826,12 +844,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Repository\\IBanRepository.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAswAsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T03:21:11.56Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T03:21:11.56Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "IBanService.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\IBanService.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Service\\IBanService.cs",
@@ -839,12 +856,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Service\\IBanService.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAArwEIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T02:37:21.283Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T02:37:21.283Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "Ban.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\Ban.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\Ban.cs",
@@ -852,12 +868,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Model\\Ban.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T16:35:44.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T16:35:44.691Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "INotificationService.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\INotificationService.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Service\\INotificationService.cs",
@@ -865,12 +880,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Service\\INotificationService.cs",
               "ViewState": "AgIAAEsAAAAAAAAAAAAWwGkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T02:28:56.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T02:28:56.321Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "ChatBan.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\ChatBan.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\ChatBan.cs",
@@ -878,12 +892,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Model\\ChatBan.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T03:18:01.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-20T03:18:01.153Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "BanDto.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\BanDto.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\BanDto.cs",
@@ -891,12 +904,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\BanDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T03:05:56.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T03:05:56.53Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "IChatRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Repository\\IChatRepository.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Repository\\IChatRepository.cs",
@@ -904,12 +916,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Repository\\IChatRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T03:20:22.879Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-03T03:20:22.879Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "ChatBanRequest.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\ChatBanRequest.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\ChatBanRequest.cs",
@@ -917,12 +928,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\ChatBanRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:45:25.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T15:45:25.038Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "BanUserRequest.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\BanUserRequest.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\BanUserRequest.cs",
@@ -930,12 +940,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\BanUserRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:49:33.988Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T15:49:33.988Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Controller\\UsersController.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Controller\\UsersController.cs",
@@ -943,12 +952,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Controller\\UsersController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAtwCgAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T16:19:37.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T16:19:37.109Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "BansController.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Controller\\BansController.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Controller\\BansController.cs",
@@ -956,12 +964,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Controller\\BansController.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAQwBMAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T02:40:51.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T02:40:51.73Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "CreateReportRequest.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\CreateReportRequest.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\CreateReportRequest.cs",
@@ -969,12 +976,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\CreateReportRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:49:17.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T15:49:17.033Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "CreateStreamRequest.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\CreateStreamRequest.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\CreateStreamRequest.cs",
@@ -982,12 +988,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\CreateStreamRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:43:24.345Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T15:43:24.345Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "ChatMessageDto.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\ChatMessageDto.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\ChatMessageDto.cs",
@@ -995,12 +1000,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\ChatMessageDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:44:39.95Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T15:44:39.95Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "AuthResponse.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\AuthResponse.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\AuthResponse.cs",
@@ -1008,12 +1012,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\AuthResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:41:35.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T15:41:35.385Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Controller\\CategoriesController.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Controller\\CategoriesController.cs",
@@ -1021,12 +1024,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Controller\\CategoriesController.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAswGEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T04:02:08.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-03T04:02:08.591Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Controller\\AuthController.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Controller\\AuthController.cs",
@@ -1034,12 +1036,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Controller\\AuthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T16:17:52.458Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T16:17:52.458Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "ChatController.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Controller\\ChatController.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Controller\\ChatController.cs",
@@ -1047,12 +1048,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Controller\\ChatController.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAYwC4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T16:20:22.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T16:20:22.818Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "FollowsController.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Controller\\FollowsController.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Controller\\FollowsController.cs",
@@ -1060,12 +1060,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Controller\\FollowsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T16:20:51.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T16:20:51.539Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "StreamsController.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Controller\\StreamsController.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Controller\\StreamsController.cs",
@@ -1073,12 +1072,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Controller\\StreamsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T16:20:00.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T16:20:00.085Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 46,
               "Title": "SendChatRequest.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\SendChatRequest.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\SendChatRequest.cs",
@@ -1086,12 +1084,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\SendChatRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:45:03.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T15:45:03.984Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 47,
               "Title": "RegisterRequest.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\RegisterRequest.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\RegisterRequest.cs",
@@ -1099,12 +1096,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\RegisterRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:40:29.838Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T15:40:29.838Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 48,
               "Title": "PagedResult.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\PagedResult.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\PagedResult.cs",
@@ -1112,12 +1108,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\PagedResult.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:49:54.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T15:49:54.805Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 49,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\LoginRequest.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\LoginRequest.cs",
@@ -1125,12 +1120,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\LoginRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:40:52.045Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T15:40:52.045Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 50,
               "Title": "FollowDto.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\FollowDto.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\FollowDto.cs",
@@ -1138,12 +1132,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\FollowDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:46:05.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T15:46:05.836Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 51,
               "Title": "CreateSubscriptionRequest.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\CreateSubscriptionRequest.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\CreateSubscriptionRequest.cs",
@@ -1151,12 +1144,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\CreateSubscriptionRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:47:59.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T15:47:59.695Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 52,
               "Title": "ReportsController.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Controller\\ReportsController.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Controller\\ReportsController.cs",
@@ -1164,12 +1156,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Controller\\ReportsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T03:28:47.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-03T03:28:47.191Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 53,
               "Title": "IFollowService.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\IFollowService.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Service\\IFollowService.cs",
@@ -1177,12 +1168,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Service\\IFollowService.cs",
               "ViewState": "AgIAACUAAAAAAAAAAADwv1EAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T16:12:03.071Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T16:12:03.071Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 54,
               "Title": "IChatService.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\IChatService.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Service\\IChatService.cs",
@@ -1190,12 +1180,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Service\\IChatService.cs",
               "ViewState": "AgIAAEkAAAAAAAAAAAAuwF8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T16:11:31.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T16:11:31.815Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 55,
               "Title": "NotificationsController.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Controller\\NotificationsController.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Controller\\NotificationsController.cs",
@@ -1203,12 +1192,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Controller\\NotificationsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T02:31:25.171Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T02:31:25.171Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 56,
               "Title": "NotificationDto.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\NotificationDto.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\NotificationDto.cs",
@@ -1216,12 +1204,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\DTOs\\NotificationDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:46:24.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T15:46:24.163Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 58,
               "Title": "ICategoryService.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\ICategoryService.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Service\\ICategoryService.cs",
@@ -1229,12 +1216,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Service\\ICategoryService.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAUwEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T04:01:30.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-03T04:01:30.476Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 122,
               "Title": "20260410011816_updatecategory.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Migrations\\20260410011816_updatecategory.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Migrations\\20260410011816_updatecategory.cs",
@@ -1242,12 +1228,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Migrations\\20260410011816_updatecategory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T01:18:17.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T01:18:17.259Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 57,
               "Title": "Streamcategoryservice.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\Streamcategoryservice.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Service\\Streamcategoryservice.cs",
@@ -1255,12 +1240,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Service\\Streamcategoryservice.cs",
               "ViewState": "AgIAACkBAAAAAAAAAAAmwD0BAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T01:01:40.136Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T01:01:40.136Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 59,
               "Title": "DonationsController.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Controller\\DonationsController.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Controller\\DonationsController.cs",
@@ -1268,12 +1252,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Controller\\DonationsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T16:21:18.851Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T16:21:18.851Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 60,
               "Title": "StreamCategory.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\StreamCategory.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\StreamCategory.cs",
@@ -1281,12 +1264,11 @@
               "RelativeToolTip": "hoangngocthe_2123110488\\Model\\StreamCategory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAIoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T03:16:48.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-20T03:16:48.365Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 61,
               "Title": "DbInitializer.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Data\\DbInitializer.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Data\\DbInitializer.cs",
@@ -1298,7 +1280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 122,
+              "DocumentIndex": 121,
               "Title": "20260409172708_AddBlacklistTable.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Migrations\\20260409172708_AddBlacklistTable.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Migrations\\20260409172708_AddBlacklistTable.cs",
@@ -1310,7 +1292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 62,
               "Title": "BlacklistKeyword.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\BlacklistKeyword.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\BlacklistKeyword.cs",
@@ -1322,7 +1304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 63,
               "Title": "AppDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Migrations\\AppDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Migrations\\AppDbContextModelSnapshot.cs",
@@ -1334,7 +1316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 64,
               "Title": "ChatMessage.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\ChatMessage.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\ChatMessage.cs",
@@ -1346,7 +1328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 65,
               "Title": "ReportService.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\ReportService.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Service\\ReportService.cs",
@@ -1358,7 +1340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 66,
               "Title": "IReportService.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\IReportService.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Service\\IReportService.cs",
@@ -1370,7 +1352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 67,
               "Title": "Notification.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\Notification.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\Notification.cs",
@@ -1382,7 +1364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 69,
               "Title": "StreamCategoryDto.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\StreamCategoryDto.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\StreamCategoryDto.cs",
@@ -1394,7 +1376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 68,
               "Title": "Follow.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\Follow.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\Follow.cs",
@@ -1406,7 +1388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 70,
               "Title": "ICategoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Repository\\ICategoryRepository.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Repository\\ICategoryRepository.cs",
@@ -1418,7 +1400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 71,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\Student.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\Student.cs",
@@ -1430,7 +1412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 72,
               "Title": "StreamView.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\StreamView.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\StreamView.cs",
@@ -1442,7 +1424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 73,
               "Title": "Thumbnail.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\Thumbnail.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\Thumbnail.cs",
@@ -1454,7 +1436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 74,
               "Title": "SubscriptionPlan.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\SubscriptionPlan.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\SubscriptionPlan.cs",
@@ -1466,7 +1448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 75,
               "Title": "StreamTagMapping.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\StreamTagMapping.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\StreamTagMapping.cs",
@@ -1478,7 +1460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 76,
               "Title": "StreamTag.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\StreamTag.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\StreamTag.cs",
@@ -1490,7 +1472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 77,
               "Title": "StreamStat.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\StreamStat.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\StreamStat.cs",
@@ -1502,7 +1484,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 78,
               "Title": "ReportRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Repository\\ReportRepository.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Repository\\ReportRepository.cs",
@@ -1514,7 +1496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 79,
               "Title": "IReportRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Repository\\IReportRepository.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Repository\\IReportRepository.cs",
@@ -1526,7 +1508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 80,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Mapping\\MappingProfile.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Mapping\\MappingProfile.cs",
@@ -1538,7 +1520,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 81,
               "Title": "ReportDto.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\ReportDto.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\ReportDto.cs",
@@ -1550,7 +1532,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 82,
               "Title": "ISubscriptionRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Repository\\ISubscriptionRepository.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Repository\\ISubscriptionRepository.cs",
@@ -1562,7 +1544,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 84,
               "Title": "IDonationRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Repository\\IDonationRepository.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Repository\\IDonationRepository.cs",
@@ -1574,7 +1556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 85,
               "Title": "Genericrepository.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Repository\\Genericrepository.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Repository\\Genericrepository.cs",
@@ -1586,7 +1568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 83,
               "Title": "IFollowRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Repository\\IFollowRepository.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Repository\\IFollowRepository.cs",
@@ -1598,7 +1580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 86,
               "Title": "Report.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\Report.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\Report.cs",
@@ -1610,7 +1592,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 87,
               "Title": "IDonationService.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\IDonationService.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Service\\IDonationService.cs",
@@ -1622,7 +1604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 88,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\IUserService.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Service\\IUserService.cs",
@@ -1634,7 +1616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 89,
               "Title": "SubscriptionsController.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Controller\\SubscriptionsController.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Controller\\SubscriptionsController.cs",
@@ -1646,7 +1628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 90,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\User.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\User.cs",
@@ -1658,7 +1640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 121,
+              "DocumentIndex": 120,
               "Title": "20260403024808_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Migrations\\20260403024808_InitialCreate.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Migrations\\20260403024808_InitialCreate.cs",
@@ -1670,7 +1652,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 92,
               "Title": "Subscription.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\Subscription.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\Subscription.cs",
@@ -1682,7 +1664,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 91,
               "Title": "UserRole.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\UserRole.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\UserRole.cs",
@@ -1694,7 +1676,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 93,
               "Title": "Donation.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\Donation.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\Donation.cs",
@@ -1706,7 +1688,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 94,
               "Title": "hoangngocthe_2123110488.http",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\hoangngocthe_2123110488.http",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\hoangngocthe_2123110488.http",
@@ -1718,43 +1700,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "hoangngocthe_2123110488\\WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\WeatherForecast.cs",
-              "RelativeToolTip": "hoangngocthe_2123110488\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T01:27:59.063Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 93,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Properties\\launchSettings.json",
-              "RelativeToolTip": "hoangngocthe_2123110488\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-13T01:09:38.734Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 94,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\appsettings.json",
-              "RelativeDocumentMoniker": "hoangngocthe_2123110488\\appsettings.json",
-              "ToolTip": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\appsettings.json",
-              "RelativeToolTip": "hoangngocthe_2123110488\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-13T01:28:07.672Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 96,
               "Title": "DonationDto.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\DonationDto.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\DonationDto.cs",
@@ -1766,7 +1712,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 95,
               "Title": "20260403015152_updatedatabase.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Migrations\\20260403015152_updatedatabase.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Migrations\\20260403015152_updatedatabase.cs",
@@ -1778,7 +1724,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 97,
               "Title": "UserDto.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\UserDto.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\UserDto.cs",
@@ -1790,7 +1736,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 98,
               "Title": "ISubscriptionService.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\ISubscriptionService.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Service\\ISubscriptionService.cs",
@@ -1802,7 +1748,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 99,
               "Title": "Stream.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\Stream.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\Stream.cs",
@@ -1814,7 +1760,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 100,
               "Title": "Chathub.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Hubs\\Chathub.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Hubs\\Chathub.cs",
@@ -1826,7 +1772,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 101,
               "Title": "INotificationRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Repository\\INotificationRepository.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Repository\\INotificationRepository.cs",
@@ -1838,7 +1784,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 102,
               "Title": "FollowRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Repository\\FollowRepository.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Repository\\FollowRepository.cs",
@@ -1850,7 +1796,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 103,
               "Title": "Log.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\Log.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\Log.cs",
@@ -1862,7 +1808,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 104,
               "Title": "Setting.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\Setting.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\Setting.cs",
@@ -1874,7 +1820,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 105,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\Role.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\Role.cs",
@@ -1886,7 +1832,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 106,
               "Title": "UserProfile.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\UserProfile.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\UserProfile.cs",
@@ -1898,7 +1844,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 107,
               "Title": "StreamHub.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Hubs\\StreamHub.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Hubs\\StreamHub.cs",
@@ -1910,7 +1856,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 108,
               "Title": "IStreamService.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Service\\IStreamService.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Service\\IStreamService.cs",
@@ -1922,7 +1868,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 111,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Repository\\IUserRepository.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Repository\\IUserRepository.cs",
@@ -1934,7 +1880,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 110,
               "Title": "StreamRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Repository\\StreamRepository.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Repository\\StreamRepository.cs",
@@ -1946,7 +1892,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 109,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Repository\\UserRepository.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Repository\\UserRepository.cs",
@@ -1958,7 +1904,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 112,
               "Title": "IStreamRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Repository\\IStreamRepository.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Repository\\IStreamRepository.cs",
@@ -1970,7 +1916,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 113,
               "Title": "SubscriptionPlanDto.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\SubscriptionPlanDto.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\SubscriptionPlanDto.cs",
@@ -1982,7 +1928,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 114,
               "Title": "CreateDonationRequest.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\CreateDonationRequest.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\CreateDonationRequest.cs",
@@ -1994,7 +1940,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 115,
               "Title": "UpdateStreamRequest.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\UpdateStreamRequest.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\UpdateStreamRequest.cs",
@@ -2006,7 +1952,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
+              "DocumentIndex": 116,
               "Title": "UserProfileDto.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\UserProfileDto.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\UserProfileDto.cs",
@@ -2018,7 +1964,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 118,
+              "DocumentIndex": 117,
               "Title": "UpdateUserRequest.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\DTOs\\UpdateUserRequest.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\DTOs\\UpdateUserRequest.cs",
@@ -2030,7 +1976,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 118,
               "Title": "20260327034849_newtable.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Migrations\\20260327034849_newtable.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Migrations\\20260327034849_newtable.cs",
@@ -2042,7 +1988,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 119,
               "Title": "Transaction.cs",
               "DocumentMoniker": "C:\\Users\\Ngoc The\\Desktop\\asp.net\\hoangngocthe_2123110488\\hoangngocthe_2123110488\\Model\\Transaction.cs",
               "RelativeDocumentMoniker": "hoangngocthe_2123110488\\Model\\Transaction.cs",

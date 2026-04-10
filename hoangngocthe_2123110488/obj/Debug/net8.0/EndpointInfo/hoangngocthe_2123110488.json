@@ -1981,7 +1981,7 @@
     "securitySchemes": {
       "Bearer": {
         "type": "http",
-        "description": "Enter: Bearer {token}",
+        "description": "Nhập: Bearer {token}",
         "scheme": "Bearer",
         "bearerFormat": "JWT"
       }

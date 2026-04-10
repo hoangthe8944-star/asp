@@ -1,26 +1,31 @@
 ﻿using System.Text;
-
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-
-using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using System.Text.Json.Serialization; // Thêm thư viện này
 using hoangngocthe_2123110488.Data;
 using hoangngocthe_2123110488.Hubs;
-using hoangngocthe_2123110488.Model;
 using hoangngocthe_2123110488.Repository;
 using hoangngocthe_2123110488.Service;
 using hoangngocthe_2123110488.Repository.StreamingApp.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ── DATABASE ──────────────────────────────────────────────
+// ── 1. CẤU HÌNH JSON (Fix lỗi Swagger 500 do vòng lặp dữ liệu) ─────
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+        options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+    });
+
+// ── 2. DATABASE ──────────────────────────────────────────────
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// ── JWT AUTH ──────────────────────────────────────────────
-var jwtKey = builder.Configuration["Jwt:Key"]!;
+// ── 3. JWT AUTH ──────────────────────────────────────────────
+var jwtKey = builder.Configuration["Jwt:Key"] ?? "Key_Mac_Dinh_Sieu_Bao_Mat_123456";
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -34,8 +39,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidAudience = builder.Configuration["Jwt:Audience"],
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
         };
-
-        // Cho phép SignalR gửi token qua query string
         options.Events = new JwtBearerEvents
         {
             OnMessageReceived = context =>
@@ -51,7 +54,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddAuthorization();
 
-// ── REPOSITORIES ──────────────────────────────────────────
+// ── 4. DEPENDENCY INJECTION (Gộp lại cho gọn) ─────────────────
+builder.Services.AddHttpClient();
+builder.Services.AddAutoMapper(typeof(MappingProfile));
+builder.Services.AddSignalR();
+
+// Repositories
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IStreamRepository, StreamRepository>();
@@ -60,8 +68,11 @@ builder.Services.AddScoped<IFollowRepository, FollowRepository>();
 builder.Services.AddScoped<IDonationRepository, DonationRepository>();
 builder.Services.AddScoped<ISubscriptionRepository, SubscriptionRepository>();
 builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
+builder.Services.AddScoped<IBanRepository, BanRepository>();
+builder.Services.AddScoped<IReportRepository, ReportRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
-// ── SERVICES ──────────────────────────────────────────────
+// Services
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IStreamService, StreamService>();
@@ -69,32 +80,27 @@ builder.Services.AddScoped<IChatService, ChatService>();
 builder.Services.AddScoped<IFollowService, FollowService>();
 builder.Services.AddScoped<IDonationService, DonationService>();
 builder.Services.AddScoped<ISubscriptionService, SubscriptionService>();
-builder.Services.AddScoped<IBanRepository, BanRepository>();
 builder.Services.AddScoped<IBanService, BanService>();
 builder.Services.AddScoped<IAnalyticsService, AnalyticsService>();
 builder.Services.AddScoped<IVideoService, VideoService>();
 builder.Services.AddScoped<ISettingService, SettingService>();
 builder.Services.AddScoped<ILogService, LogService>();
+builder.Services.AddScoped<IReportService, ReportService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IStreamCategoryService, StreamCategoryService>();
 
-// ── SIGNALR ───────────────────────────────────────────────
-builder.Services.AddSignalR();
-
-// ── CORS ──────────────────────────────────────────────────
-// Thành đoạn mới (chỉ định đúng origin React):
+// ── 5. CORS (Gộp thành 1 chính sách duy nhất) ────────────────
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
-        policy.WithOrigins(
-                "http://localhost:5173",   // Vite dev server
-                "https://localhost:5173"
-              )
+    {
+        policy.AllowAnyOrigin() // Cho phép tất cả để test deploy cho dễ
               .AllowAnyMethod()
-              .AllowAnyHeader()
-              .AllowCredentials());        // Cần cho SignalR
+              .AllowAnyHeader();
+    });
 });
 
-// ── CONTROLLERS + SWAGGER ─────────────────────────────────
-builder.Services.AddControllers();
+// ── 6. SWAGGER CONFIG ────────────────────────────────────────
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -106,64 +112,52 @@ builder.Services.AddSwaggerGen(c =>
         Scheme = "Bearer",
         BearerFormat = "JWT",
         In = ParameterLocation.Header,
-        Description = "Enter: Bearer {token}"
+        Description = "Nhập: Bearer {token}"
     });
-    c.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement {
         {
-            new OpenApiSecurityScheme { Reference = new OpenApiReference
-                { Type = ReferenceType.SecurityScheme, Id = "Bearer" } },
+            new OpenApiSecurityScheme { Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "Bearer" } },
             Array.Empty<string>()
         }
     });
 });
-//---------------------------------------------------------------
-// Đăng ký AutoMapper
-builder.Services.AddAutoMapper(typeof(MappingProfile));
 
-// Đăng ký Repository và Service
-builder.Services.AddScoped<IReportRepository, ReportRepository>();
-builder.Services.AddScoped<IReportService, ReportService>();
-
-// CORS (Nếu bạn chạy React ở cổng khác)
-builder.Services.AddCors(options => {
-    options.AddPolicy("AllowAll", b => b.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
-});
-
-//  -----------------------------category--------------------------------
-builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
-builder.Services.AddScoped<ICategoryService, CategoryService>();
-builder.Services.AddHttpClient();
-builder.Services.AddScoped<IStreamCategoryService, StreamCategoryService>();
-
-// ─────────────────────────────────────────────────────────
 var app = builder.Build();
 
+// ── 7. DATABASE INITIALIZER ──────────────────────────────────
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     try
     {
         var context = services.GetRequiredService<AppDbContext>();
+        // db.Database.Migrate(); // Mở dòng này nếu muốn tự động chạy Migration
         DbInitializer.Initialize(context);
     }
     catch (Exception ex)
     {
-        Console.WriteLine("Lỗi khởi tạo dữ liệu: " + ex.Message);
+        Console.WriteLine("Lỗi DB: " + ex.Message);
     }
 }
 
+// ── 8. MIDDLEWARE PIPELINE ───────────────────────────────────
+
+// Swagger luôn chạy để xem được trên Render
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-    c.RoutePrefix = string.Empty; // Để Swagger là trang mặc định khi vào link Render
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Streaming API V1");
+    c.RoutePrefix = string.Empty; // Swagger nằm ở trang chủ
 });
 
 app.UseCors("AllowAll");
-app.UseHttpsRedirection();
+
+// Tắt cái này khi chạy trên Render để tránh lỗi vòng lặp Redirect
+// app.UseHttpsRedirection(); 
+
 app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
 app.MapHub<ChatHub>("/hubs/chat");
 
