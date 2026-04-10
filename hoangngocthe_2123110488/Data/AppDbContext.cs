@@ -46,6 +46,7 @@ namespace hoangngocthe_2123110488.Data
         public DbSet<Report> Reports { get; set; }
         public DbSet<Ban> Bans { get; set; }
 
+
         // ── MEDIA ─────────────────────────────────────────
         public DbSet<Video> Videos { get; set; }
         public DbSet<Thumbnail> Thumbnails { get; set; }

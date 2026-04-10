@@ -69,6 +69,12 @@ builder.Services.AddScoped<IChatService, ChatService>();
 builder.Services.AddScoped<IFollowService, FollowService>();
 builder.Services.AddScoped<IDonationService, DonationService>();
 builder.Services.AddScoped<ISubscriptionService, SubscriptionService>();
+builder.Services.AddScoped<IBanRepository, BanRepository>();
+builder.Services.AddScoped<IBanService, BanService>();
+builder.Services.AddScoped<IAnalyticsService, AnalyticsService>();
+builder.Services.AddScoped<IVideoService, VideoService>();
+builder.Services.AddScoped<ISettingService, SettingService>();
+builder.Services.AddScoped<ILogService, LogService>();
 
 // ── SIGNALR ───────────────────────────────────────────────
 builder.Services.AddSignalR();
@@ -127,6 +133,8 @@ builder.Services.AddCors(options => {
 //  -----------------------------category--------------------------------
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddHttpClient();
+builder.Services.AddScoped<IStreamCategoryService, StreamCategoryService>();
 
 // ─────────────────────────────────────────────────────────
 var app = builder.Build();
@@ -145,11 +153,12 @@ using (var scope = app.Services.CreateScope())
     }
 }
 
-if (app.Environment.IsDevelopment())
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+    c.RoutePrefix = string.Empty; // Để Swagger là trang mặc định khi vào link Render
+});
 
 app.UseCors("AllowAll");
 app.UseHttpsRedirection();

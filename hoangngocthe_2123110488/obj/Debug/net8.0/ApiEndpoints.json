@@ -1,5 +1,85 @@
 [
   {
+    "ContainingType": "hoangngocthe_2123110488.Controller.AnalyticsController",
+    "Method": "StreamerStats",
+    "RelativePath": "api/Analytics/streamers/{streamerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "streamerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.AnalyticsController",
+    "Method": "StreamStats",
+    "RelativePath": "api/Analytics/streams/{streamId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "streamId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.AnalyticsController",
+    "Method": "Join",
+    "RelativePath": "api/Analytics/streams/{streamId}/join",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "streamId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.AnalyticsController",
+    "Method": "Leave",
+    "RelativePath": "api/Analytics/streams/{streamId}/leave",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "streamId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.AnalyticsController",
+    "Method": "Recalc",
+    "RelativePath": "api/Analytics/streams/{streamId}/recalc",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "streamId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "hoangngocthe_2123110488.Controller.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/login",
@@ -32,8 +112,88 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "hoangngocthe_2123110488.Controller.BansController",
+    "Method": "GetAll",
+    "RelativePath": "api/Bans",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "activeOnly",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.BansController",
+    "Method": "Ban",
+    "RelativePath": "api/Bans",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "hoangngocthe_2123110488.DTOs.CreateBanRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.BansController",
+    "Method": "CheckBan",
+    "RelativePath": "api/Bans/check/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.BansController",
+    "Method": "GetByUser",
+    "RelativePath": "api/Bans/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.BansController",
+    "Method": "Unban",
+    "RelativePath": "api/Bans/user/{userId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "hoangngocthe_2123110488.Controller.CategoriesController",
-    "Method": "GetCategories",
+    "Method": "GetAll",
     "RelativePath": "api/Categories",
     "HttpMethod": "GET",
     "IsController": true,
@@ -50,8 +210,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "hoangngocthe_2123110488.DTOs.CreateCategoryDto",
+        "Name": "request",
+        "Type": "hoangngocthe_2123110488.Service.CreateCategoryRequest",
         "IsRequired": true
       }
     ],
@@ -59,7 +219,7 @@
   },
   {
     "ContainingType": "hoangngocthe_2123110488.Controller.CategoriesController",
-    "Method": "GetCategory",
+    "Method": "GetById",
     "RelativePath": "api/Categories/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -75,27 +235,6 @@
   },
   {
     "ContainingType": "hoangngocthe_2123110488.Controller.CategoriesController",
-    "Method": "Update",
-    "RelativePath": "api/Categories/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "dto",
-        "Type": "hoangngocthe_2123110488.DTOs.CreateCategoryDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "hoangngocthe_2123110488.Controller.CategoriesController",
     "Method": "Delete",
     "RelativePath": "api/Categories/{id}",
     "HttpMethod": "DELETE",
@@ -104,6 +243,54 @@
     "Parameters": [
       {
         "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.CategoriesController",
+    "Method": "UpdateStats",
+    "RelativePath": "api/Categories/{id}/update-stats",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.CategoriesController",
+    "Method": "SearchSteam",
+    "RelativePath": "api/Categories/search-steam",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "q",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.CategoriesController",
+    "Method": "SyncFromSteam",
+    "RelativePath": "api/Categories/sync-steam/{steamAppId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "steamAppId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -328,6 +515,121 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "hoangngocthe_2123110488.Controller.LogsController",
+    "Method": "GetLogs",
+    "RelativePath": "api/Logs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "action",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.LogsController",
+    "Method": "Clear",
+    "RelativePath": "api/Logs/clear",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "daysOld",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.NotificationsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Notifications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "unreadOnly",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.NotificationsController",
+    "Method": "Delete",
+    "RelativePath": "api/Notifications/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.NotificationsController",
+    "Method": "MarkRead",
+    "RelativePath": "api/Notifications/{id}/read",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.NotificationsController",
+    "Method": "MarkAllRead",
+    "RelativePath": "api/Notifications/read-all",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.NotificationsController",
+    "Method": "UnreadCount",
+    "RelativePath": "api/Notifications/unread-count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "hoangngocthe_2123110488.Controllers.ReportsController",
     "Method": "GetReports",
     "RelativePath": "api/Reports",
@@ -369,6 +671,64 @@
       {
         "Name": "dto",
         "Type": "hoangngocthe_2123110488.DTOs.UpdateReportStatusDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.SettingsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Settings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.SettingsController",
+    "Method": "Upsert",
+    "RelativePath": "api/Settings",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "hoangngocthe_2123110488.DTOs.UpsertSettingRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.SettingsController",
+    "Method": "GetByKey",
+    "RelativePath": "api/Settings/{key}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.SettingsController",
+    "Method": "Delete",
+    "RelativePath": "api/Settings/{key}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -632,6 +992,86 @@
       {
         "Name": "request",
         "Type": "hoangngocthe_2123110488.DTOs.UpdateUserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.VideosController",
+    "Method": "Create",
+    "RelativePath": "api/Videos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "hoangngocthe_2123110488.DTOs.CreateVideoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.VideosController",
+    "Method": "GetById",
+    "RelativePath": "api/Videos/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.VideosController",
+    "Method": "Delete",
+    "RelativePath": "api/Videos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.VideosController",
+    "Method": "View",
+    "RelativePath": "api/Videos/{id}/view",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.VideosController",
+    "Method": "GetByStreamer",
+    "RelativePath": "api/Videos/streamer/{streamerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "streamerId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
