@@ -40,7 +40,8 @@ namespace hoangngocthe_2123110488.Service
                 Role = "viewer",
                 Status = "active",
                 CreatedAt = DateTime.UtcNow,
-                UpdatedAt = DateTime.UtcNow
+                UpdatedAt = DateTime.UtcNow,
+                StreamKey = Guid.NewGuid().ToString("N")
             };
 
             await _userRepo.AddAsync(user);

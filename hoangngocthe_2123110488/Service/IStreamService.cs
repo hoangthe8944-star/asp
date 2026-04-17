@@ -14,13 +14,20 @@ namespace hoangngocthe_2123110488.Service
         Task DeleteAsync(int streamId, int requesterId, string requesterRole);
         Task<IEnumerable<StreamDto>> SearchAsync(string? keyword, int? categoryId);
         Task<IEnumerable<StreamDto>> GetByStreamerAsync(int streamerId);
+        Task<string> GetStreamKeyAsync(int userId);
+        Task<string> ResetStreamKeyAsync(int userId);
     }
 
     public class StreamService : IStreamService
     {
         private readonly IStreamRepository _streamRepo;
+        private readonly IUserRepository _userRepo;
 
-        public StreamService(IStreamRepository streamRepo) => _streamRepo = streamRepo;
+        public StreamService(IStreamRepository streamRepo, IUserRepository userRepo)
+        {
+            _streamRepo = streamRepo;
+            _userRepo = userRepo;
+        }
 
         public async Task<IEnumerable<StreamDto>> GetLiveStreamsAsync()
         {
@@ -114,6 +121,22 @@ namespace hoangngocthe_2123110488.Service
         {
             var streams = await _streamRepo.GetByStreamerIdAsync(streamerId);
             return streams.Select(MapToDto);
+        }
+
+        public async Task<string> GetStreamKeyAsync(int userId)
+        {
+            var user = await _userRepo.GetByIdAsync(userId);
+            if (user == null) throw new Exception("User not found");
+
+            return user.StreamKey;
+        }
+        public async Task<string> ResetStreamKeyAsync(int userId)
+        {
+            var user = await _userRepo.GetByIdAsync(userId);
+            if (user == null) throw new Exception("User not found");
+            user.StreamKey = Guid.NewGuid().ToString("N");
+            await _userRepo.UpdateAsync(user);
+            return user.StreamKey;
         }
 
         private static StreamDto MapToDto(Model.Stream s) => new()

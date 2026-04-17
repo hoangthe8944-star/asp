@@ -20,5 +20,6 @@ namespace hoangngocthe_2123110488.Repository
 
         public async Task<bool> UsernameExistsAsync(string username)
             => await _dbSet.AnyAsync(u => u.Username == username);
+        
     }
 }

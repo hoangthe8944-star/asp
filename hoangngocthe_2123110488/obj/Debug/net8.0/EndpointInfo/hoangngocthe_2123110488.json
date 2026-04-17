@@ -1342,6 +1342,30 @@
         }
       }
     },
+    "/api/Streams/me/key": {
+      "get": {
+        "tags": [
+          "Streams"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Streams/me/reset-key": {
+      "post": {
+        "tags": [
+          "Streams"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Subscriptions": {
       "post": {
         "tags": [

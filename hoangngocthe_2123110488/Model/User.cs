@@ -31,6 +31,7 @@ namespace hoangngocthe_2123110488.Model
 
         // Navigation
         public ICollection<Stream> Streams { get; set; }
+        public string StreamKey { get; set; } = Guid.NewGuid().ToString("N");
         public virtual ICollection<ChatMessage> ChatMessages { get; set; } = new List<ChatMessage>();
     }
 }

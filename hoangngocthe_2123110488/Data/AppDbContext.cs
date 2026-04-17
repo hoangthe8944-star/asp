@@ -168,6 +168,19 @@ namespace hoangngocthe_2123110488.Data
             modelBuilder.Entity<Transaction>()
                 .Property(t => t.Amount)
                 .HasColumnType("decimal(18,2)");
+            // ── Ban ───────────────────────────────────────────
+            modelBuilder.Entity<Ban>()
+                .HasOne(b => b.BannedByUser)
+                .WithMany()
+                .HasForeignKey(b => b.BannedById)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Ban>()
+                .HasOne(b => b.User)
+                .WithMany()
+                .HasForeignKey(b => b.UserId)
+                .OnDelete(DeleteBehavior.NoAction);
+
         }
     }
 }

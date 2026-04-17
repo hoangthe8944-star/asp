@@ -847,6 +847,26 @@
   },
   {
     "ContainingType": "hoangngocthe_2123110488.Controller.StreamsController",
+    "Method": "GetMyStreamKey",
+    "RelativePath": "api/Streams/me/key",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.StreamsController",
+    "Method": "ResetStreamKey",
+    "RelativePath": "api/Streams/me/reset-key",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.StreamsController",
     "Method": "Search",
     "RelativePath": "api/Streams/search",
     "HttpMethod": "GET",

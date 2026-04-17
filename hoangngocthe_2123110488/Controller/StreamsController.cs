@@ -81,5 +81,62 @@ namespace hoangngocthe_2123110488.Controller
             catch (UnauthorizedAccessException) { return Forbid(); }
             catch (Exception ex) { return BadRequest(new { message = ex.Message }); }
         }
+        private int GetUserId()
+        {
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+
+            if (userIdClaim == null)
+                throw new UnauthorizedAccessException("Token không hợp lệ hoặc thiếu userId");
+
+            return int.Parse(userIdClaim.Value);
+        }
+
+        // =============================
+        // 🔑 LẤY STREAM KEY
+        // =============================
+        [Authorize]
+        [HttpGet("me/key")]
+        public async Task<IActionResult> GetMyStreamKey()
+        {
+            try
+            {
+                var userId = GetUserId();
+                var key = await _streamService.GetStreamKeyAsync(userId);
+
+                return Ok(new { streamKey = key });
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                return Unauthorized(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        // =============================
+        // 🔄 RESET STREAM KEY
+        // =============================
+        [Authorize]
+        [HttpPost("me/reset-key")]
+        public async Task<IActionResult> ResetStreamKey()
+        {
+            try
+            {
+                var userId = GetUserId();
+                var key = await _streamService.ResetStreamKeyAsync(userId);
+
+                return Ok(new { streamKey = key });
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                return Unauthorized(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }
