@@ -1366,6 +1366,68 @@
         }
       }
     },
+    "/api/Streams/start-by-key": {
+      "post": {
+        "tags": [
+          "Streams"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StreamKeyRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StreamKeyRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/StreamKeyRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Streams/stop-by-key": {
+      "post": {
+        "tags": [
+          "Streams"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StreamKeyRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StreamKeyRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/StreamKeyRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Subscriptions": {
       "post": {
         "tags": [
@@ -1828,14 +1890,6 @@
           "thumbnail": {
             "type": "string",
             "nullable": true
-          },
-          "tagIds": {
-            "type": "array",
-            "items": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1934,6 +1988,16 @@
             "nullable": true
           },
           "type": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "StreamKeyRequest": {
+        "type": "object",
+        "properties": {
+          "streamKey": {
             "type": "string",
             "nullable": true
           }

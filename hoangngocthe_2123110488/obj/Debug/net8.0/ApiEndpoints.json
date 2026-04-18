@@ -888,6 +888,38 @@
   },
   {
     "ContainingType": "hoangngocthe_2123110488.Controller.StreamsController",
+    "Method": "StartByKey",
+    "RelativePath": "api/Streams/start-by-key",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "hoangngocthe_2123110488.DTOs.StreamKeyRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.StreamsController",
+    "Method": "StopByKey",
+    "RelativePath": "api/Streams/stop-by-key",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "hoangngocthe_2123110488.DTOs.StreamKeyRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.StreamsController",
     "Method": "GetByStreamer",
     "RelativePath": "api/Streams/streamer/{streamerId}",
     "HttpMethod": "GET",

@@ -16,6 +16,8 @@ namespace hoangngocthe_2123110488.Service
         Task<IEnumerable<StreamDto>> GetByStreamerAsync(int streamerId);
         Task<string> GetStreamKeyAsync(int userId);
         Task<string> ResetStreamKeyAsync(int userId);
+        Task<StreamDto> StartByStreamKeyAsync(string key);
+        Task<StreamDto> StopByStreamKeyAsync(string key);
     }
 
     public class StreamService : IStreamService
@@ -137,6 +139,29 @@ namespace hoangngocthe_2123110488.Service
             user.StreamKey = Guid.NewGuid().ToString("N");
             await _userRepo.UpdateAsync(user);
             return user.StreamKey;
+        }
+        public async Task<StreamDto> StartByStreamKeyAsync(string key)
+        {
+            var stream = await _streamRepo.GetByStreamKeyAsync(key)
+                ?? throw new Exception("Invalid key");
+
+            stream.Status = "live";
+            stream.StartedAt = DateTime.UtcNow;
+
+            await _streamRepo.UpdateAsync(stream);
+            return MapToDto(stream);
+        }
+
+        public async Task<StreamDto> StopByStreamKeyAsync(string key)
+        {
+            var stream = await _streamRepo.GetByStreamKeyAsync(key)
+                ?? throw new Exception("Invalid key");
+
+            stream.Status = "offline";
+            stream.EndedAt = DateTime.UtcNow;
+
+            await _streamRepo.UpdateAsync(stream);
+            return MapToDto(stream);
         }
 
         private static StreamDto MapToDto(Model.Stream s) => new()

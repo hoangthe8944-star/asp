@@ -38,5 +38,14 @@ namespace hoangngocthe_2123110488.Repository
                 query = query.Where(s => s.CategoryId == categoryId);
             return await query.OrderByDescending(s => s.ViewersCount).ToListAsync();
         }
+        public async Task<Model.Stream?> GetByStreamKeyAsync(string streamKey)
+        {
+            return await _dbSet
+                .Include(s => s.Streamer)
+                .Include(s => s.Category)
+                .Include(s => s.StreamTagMappings)
+                    .ThenInclude(m => m.Tag)
+                .FirstOrDefaultAsync(s => s.StreamKey == streamKey);
+        }
     }
 }

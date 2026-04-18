@@ -138,5 +138,19 @@ namespace hoangngocthe_2123110488.Controller
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpPost("start-by-key")]
+        public async Task<IActionResult> StartByKey([FromBody] StreamKeyRequest req)
+        {
+            var stream = await _streamService.StartByStreamKeyAsync(req.StreamKey);
+            return Ok(stream);
+        }
+
+        [HttpPost("stop-by-key")]
+        public async Task<IActionResult> StopByKey([FromBody] StreamKeyRequest req)
+        {
+            var stream = await _streamService.StopByStreamKeyAsync(req.StreamKey);
+            return Ok(stream);
+        }
     }
 }
