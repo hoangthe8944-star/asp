@@ -16,7 +16,7 @@ namespace hoangngocthe_2123110488.Service
         Task<IEnumerable<StreamDto>> GetByStreamerAsync(int streamerId);
         Task<string> GetStreamKeyAsync(int userId);
         Task<string> ResetStreamKeyAsync(int userId);
-        Task<StreamDto> StartByStreamKeyAsync(string key);
+        Task<StreamDto> StartByStreamKeyAsync(string key); // Hàm quan trọng nhất
         Task<StreamDto> StopByStreamKeyAsync(string key);
     }
 
@@ -54,7 +54,7 @@ namespace hoangngocthe_2123110488.Service
                 Thumbnail = request.Thumbnail,
                 StreamKey = Guid.NewGuid().ToString("N"),
                 Status = "offline",
-                ViewersCount = 0
+                ViewersCount = 0,
             };
 
             await _streamRepo.AddAsync(stream);
@@ -64,9 +64,10 @@ namespace hoangngocthe_2123110488.Service
         public async Task<StreamDto> UpdateAsync(int streamId, int streamerId, UpdateStreamRequest request)
         {
             var stream = await _streamRepo.GetByIdAsync(streamId)
-                ?? throw new Exception("Stream not found.");
+                ?? throw new Exception("Không tìm thấy Stream.");
+
             if (stream.StreamerId != streamerId)
-                throw new UnauthorizedAccessException("Not your stream.");
+                throw new UnauthorizedAccessException("Bạn không có quyền chỉnh sửa Stream này.");
 
             if (request.Title != null) stream.Title = request.Title;
             if (request.Description != null) stream.Description = request.Description;
@@ -80,13 +81,15 @@ namespace hoangngocthe_2123110488.Service
         public async Task<StreamDto> StartStreamAsync(int streamId, int streamerId)
         {
             var stream = await _streamRepo.GetByIdAsync(streamId)
-                ?? throw new Exception("Stream not found.");
+                ?? throw new Exception("Không tìm thấy Stream.");
+
             if (stream.StreamerId != streamerId)
-                throw new UnauthorizedAccessException("Not your stream.");
+                throw new UnauthorizedAccessException("Không có quyền.");
 
             stream.Status = "live";
             stream.StartedAt = DateTime.UtcNow;
             stream.EndedAt = null;
+
             await _streamRepo.UpdateAsync(stream);
             return MapToDto(stream);
         }
@@ -94,12 +97,14 @@ namespace hoangngocthe_2123110488.Service
         public async Task<StreamDto> StopStreamAsync(int streamId, int streamerId)
         {
             var stream = await _streamRepo.GetByIdAsync(streamId)
-                ?? throw new Exception("Stream not found.");
+                ?? throw new Exception("Không tìm thấy Stream.");
+
             if (stream.StreamerId != streamerId)
-                throw new UnauthorizedAccessException("Not your stream.");
+                throw new UnauthorizedAccessException("Không có quyền.");
 
             stream.Status = "offline";
             stream.EndedAt = DateTime.UtcNow;
+
             await _streamRepo.UpdateAsync(stream);
             return MapToDto(stream);
         }
@@ -107,9 +112,11 @@ namespace hoangngocthe_2123110488.Service
         public async Task DeleteAsync(int streamId, int requesterId, string requesterRole)
         {
             var stream = await _streamRepo.GetByIdAsync(streamId)
-                ?? throw new Exception("Stream not found.");
+                ?? throw new Exception("Không tìm thấy Stream.");
+
             if (stream.StreamerId != requesterId && requesterRole != "admin")
-                throw new UnauthorizedAccessException("Access denied.");
+                throw new UnauthorizedAccessException("Không có quyền.");
+
             await _streamRepo.DeleteAsync(stream);
         }
 
@@ -128,47 +135,78 @@ namespace hoangngocthe_2123110488.Service
         public async Task<string> GetStreamKeyAsync(int userId)
         {
             var user = await _userRepo.GetByIdAsync(userId);
-            if (user == null) throw new Exception("User not found");
-
-            return user.StreamKey;
+            return user?.StreamKey ?? throw new Exception("Người dùng không tồn tại.");
         }
+
         public async Task<string> ResetStreamKeyAsync(int userId)
         {
             var user = await _userRepo.GetByIdAsync(userId);
-            if (user == null) throw new Exception("User not found");
+            if (user == null) throw new Exception("Người dùng không tồn tại.");
+
             user.StreamKey = Guid.NewGuid().ToString("N");
             await _userRepo.UpdateAsync(user);
             return user.StreamKey;
         }
+
+        // ========================================================
+        // 🚀 TỰ ĐỘNG NHẬN LUỒNG (BRIDGE LOGIC)
+        // ========================================================
         public async Task<StreamDto> StartByStreamKeyAsync(string key)
         {
-            var stream = await _streamRepo.GetByStreamKeyAsync(key)
-                ?? throw new Exception("Invalid key");
+            // 1. Kiểm tra xem mã Key này thuộc về User nào trong hệ thống
+            // Bạn cần đảm bảo IUserRepository có hàm GetByStreamKeyAsync
+            var user = await _userRepo.GetByStreamKeyAsync(key)
+                ?? throw new Exception("Stream Key không tồn tại trên hệ thống.");
 
-            stream.Status = "live";
-            stream.StartedAt = DateTime.UtcNow;
+            // 2. Tìm xem User này đã từng tạo Stream nào chưa
+            var stream = await _streamRepo.GetByStreamKeyAsync(key);
 
-            await _streamRepo.UpdateAsync(stream);
+            if (stream == null)
+            {
+                // Nếu User có Key đúng nhưng chưa bao giờ tạo luồng trong bảng Streams
+                // Tự động tạo một bản ghi mới để Web hiển thị
+                stream = new Model.Stream
+                {
+                    StreamerId = user.Id,
+                    Title = $"{user.Username} is Streaming",
+                    Description = "Livestream tự động kết nối qua Tool",
+                    StreamKey = key,
+                    Status = "live",
+                    StartedAt = DateTime.UtcNow,
+                    ViewersCount = 0
+                };
+                await _streamRepo.AddAsync(stream);
+            }
+            else
+            {
+                // Nếu đã có bản ghi, cập nhật trạng thái sang live
+                stream.Status = "live";
+                stream.StartedAt = DateTime.UtcNow;
+                stream.EndedAt = null;
+                await _streamRepo.UpdateAsync(stream);
+            }
+
             return MapToDto(stream);
         }
 
         public async Task<StreamDto> StopByStreamKeyAsync(string key)
         {
-            var stream = await _streamRepo.GetByStreamKeyAsync(key)
-                ?? throw new Exception("Invalid key");
-
-            stream.Status = "offline";
-            stream.EndedAt = DateTime.UtcNow;
-
-            await _streamRepo.UpdateAsync(stream);
-            return MapToDto(stream);
+            var stream = await _streamRepo.GetByStreamKeyAsync(key);
+            if (stream != null)
+            {
+                stream.Status = "offline";
+                stream.EndedAt = DateTime.UtcNow;
+                await _streamRepo.UpdateAsync(stream);
+                return MapToDto(stream);
+            }
+            throw new Exception("Không tìm thấy luồng để dừng.");
         }
 
         private static StreamDto MapToDto(Model.Stream s) => new()
         {
             Id = s.Id,
             StreamerId = s.StreamerId,
-            StreamerName = s.Streamer?.Username ?? "",
+            StreamerName = s.Streamer?.Username ?? "Anonymous",
             Title = s.Title,
             Description = s.Description,
             CategoryId = s.CategoryId,
@@ -178,7 +216,7 @@ namespace hoangngocthe_2123110488.Service
             Status = s.Status,
             ViewersCount = s.ViewersCount,
             StartedAt = s.StartedAt,
-            Tags = s.StreamTagMappings?.Select(m => m.Tag.Name).ToList() ?? new()
+            Tags = s.StreamTagMappings?.Select(m => m.Tag.Name).ToList() ?? new List<string>()
         };
     }
 }

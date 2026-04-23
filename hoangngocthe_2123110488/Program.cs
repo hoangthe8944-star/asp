@@ -89,14 +89,21 @@ builder.Services.AddScoped<IReportService, ReportService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IStreamCategoryService, StreamCategoryService>();
 
-// ── 5. CORS (Gộp thành 1 chính sách duy nhất) ────────────────
+// ── 5. CORS ────────────────────────────────────────────────
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
     {
-        policy.AllowAnyOrigin() // Cho phép tất cả để test deploy cho dễ
-              .AllowAnyMethod()
-              .AllowAnyHeader();
+        policy
+            .WithOrigins(
+                "http://localhost:3000",
+                "http://localhost:5173",
+                "http://localhost:5174",
+                "https://your-frontend-domain.com" // thêm domain thật của bạn
+            )
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials(); // ← Bắt buộc cho SignalR + stream
     });
 });
 
@@ -157,7 +164,7 @@ app.UseCors("AllowAll");
 
 app.UseAuthentication();
 app.UseAuthorization();
-
+app.UseStaticFiles();
 app.MapControllers();
 app.MapHub<ChatHub>("/hubs/chat");
 

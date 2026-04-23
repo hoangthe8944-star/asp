@@ -10,6 +10,7 @@ namespace hoangngocthe_2123110488.Repository
 
         public async Task<IEnumerable<Model.Stream>> GetLiveStreamsAsync()
             => await _dbSet
+                .Include(s => s.Streamer)
                 .Include(s => s.StreamTagMappings).ThenInclude(m => m.Tag)
                 .Include(s => s.Category)
                 .Where(s => s.Status == "live")
@@ -18,6 +19,9 @@ namespace hoangngocthe_2123110488.Repository
 
         public async Task<IEnumerable<Model.Stream>> GetByStreamerIdAsync(int streamerId)
             => await _dbSet
+                .Include(s => s.Streamer)
+                .Include(s => s.StreamTagMappings).ThenInclude(m => m.Tag)
+                .Include(s => s.Category)
                 .Where(s => s.StreamerId == streamerId)
                 .OrderByDescending(s => s.StartedAt)
                 .ToListAsync();
@@ -31,7 +35,11 @@ namespace hoangngocthe_2123110488.Repository
 
         public async Task<IEnumerable<Model.Stream>> SearchAsync(string keyword, int? categoryId)
         {
-            var query = _dbSet.AsQueryable();
+            var query = _dbSet
+                .Include(s => s.Streamer)
+                .Include(s => s.StreamTagMappings).ThenInclude(m => m.Tag)
+                .Include(s => s.Category)
+                .AsQueryable();
             if (!string.IsNullOrEmpty(keyword))
                 query = query.Where(s => s.Title.Contains(keyword));
             if (categoryId.HasValue)

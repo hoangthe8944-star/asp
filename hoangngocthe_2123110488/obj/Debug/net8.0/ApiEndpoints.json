@@ -935,6 +935,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "hoangngocthe_2123110488.Controller.StreamsController",
+    "Method": "UploadThumbnail",
+    "RelativePath": "api/Streams/upload/thumbnail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hoangngocthe_2123110488.Controller.StreamsController",
+    "Method": "MediaMTXWebhook",
+    "RelativePath": "api/Streams/webhook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "hoangngocthe_2123110488.DTOs.MediaMTXRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "hoangngocthe_2123110488.Controller.SubscriptionsController",
     "Method": "Subscribe",
     "RelativePath": "api/Subscriptions",

@@ -1,6 +1,6 @@
-﻿using hoangngocthe_2123110488.DTOs;
-using hoangngocthe_2123110488.Model;
-using hoangngocthe_2123110488.Repository;
+﻿using hoangngocthe_2123110488.Model;
+using Microsoft.EntityFrameworkCore;
+using hoangngocthe_2123110488.Data; // Đảm bảo đúng namespace của AppDbContext
 
 namespace hoangngocthe_2123110488.Service
 {
@@ -9,73 +9,78 @@ namespace hoangngocthe_2123110488.Service
         Task<bool> FollowAsync(int followerId, int followingId);
         Task<bool> UnfollowAsync(int followerId, int followingId);
         Task<bool> IsFollowingAsync(int followerId, int followingId);
-        Task<IEnumerable<FollowDto>> GetFollowingAsync(int userId);
+        Task<IEnumerable<object>> GetFollowingAsync(int userId);
         Task<int> GetFollowerCountAsync(int userId);
     }
 
     public class FollowService : IFollowService
     {
-        private readonly IFollowRepository _followRepo;
-        private readonly INotificationRepository _notifRepo;
+        private readonly AppDbContext _context;
 
-        public FollowService(IFollowRepository followRepo, INotificationRepository notifRepo)
+        // CHỈ GIỮ LẠI MỘT HÀM KHỞI TẠO NÀY
+        public FollowService(AppDbContext context)
         {
-            _followRepo = followRepo;
-            _notifRepo = notifRepo;
+            _context = context;
         }
 
         public async Task<bool> FollowAsync(int followerId, int followingId)
         {
-            if (followerId == followingId) throw new Exception("Cannot follow yourself.");
-            if (await _followRepo.IsFollowingAsync(followerId, followingId)) return false;
+            if (followerId == followingId)
+                throw new Exception("Bạn không thể tự theo dõi chính mình.");
 
-            await _followRepo.AddAsync(new Follow
+            // Kiểm tra trùng lặp trước khi lưu
+            var isExisted = await _context.Follows
+                .AnyAsync(f => f.FollowerId == followerId && f.FollowingId == followingId);
+
+            if (isExisted) return true;
+
+            var follow = new Follow
             {
                 FollowerId = followerId,
                 FollowingId = followingId,
                 CreatedAt = DateTime.UtcNow
-            });
+            };
 
-            // Tạo notification cho streamer
-            await _notifRepo.AddAsync(new Notification
-            {
-                UserId = followingId,
-                Type = "follow",
-                Message = $"Someone started following you.",
-                IsRead = false,
-                CreatedAt = DateTime.UtcNow
-            });
-
+            _context.Follows.Add(follow);
+            await _context.SaveChangesAsync();
             return true;
         }
 
         public async Task<bool> UnfollowAsync(int followerId, int followingId)
         {
-            var follow = await _followRepo.FirstOrDefaultAsync(
-                f => f.FollowerId == followerId && f.FollowingId == followingId);
-            if (follow == null) return false;
-            await _followRepo.DeleteAsync(follow);
+            var follow = await _context.Follows
+                .FirstOrDefaultAsync(f => f.FollowerId == followerId && f.FollowingId == followingId);
+
+            if (follow != null)
+            {
+                _context.Follows.Remove(follow);
+                await _context.SaveChangesAsync();
+            }
             return true;
         }
 
         public async Task<bool> IsFollowingAsync(int followerId, int followingId)
-            => await _followRepo.IsFollowingAsync(followerId, followingId);
-
-        public async Task<IEnumerable<FollowDto>> GetFollowingAsync(int userId)
         {
-            var follows = await _followRepo.GetFollowingAsync(userId);
-            return follows.Select(f => new FollowDto
-            {
-                Id = f.Id,
-                FollowerId = f.FollowerId,
-                FollowingId = f.FollowingId,
-                FollowingUsername = f.Following?.Username ?? "",
-                FollowingAvatar = f.Following?.Avatar,
-                CreatedAt = f.CreatedAt
-            });
+            return await _context.Follows
+                .AnyAsync(f => f.FollowerId == followerId && f.FollowingId == followingId);
+        }
+
+        public async Task<IEnumerable<object>> GetFollowingAsync(int userId)
+        {
+            return await _context.Follows
+                .Where(f => f.FollowerId == userId)
+                .Include(f => f.Following) // Đảm bảo bảng Follow có quan hệ với User
+                .Select(f => new {
+                    f.FollowingId,
+                    Username = f.Following.Username,
+                    Avatar = f.Following.Avatar
+                })
+                .ToListAsync();
         }
 
         public async Task<int> GetFollowerCountAsync(int userId)
-            => await _followRepo.GetFollowerCountAsync(userId);
+        {
+            return await _context.Follows.CountAsync(f => f.FollowingId == userId);
+        }
     }
 }

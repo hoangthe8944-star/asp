@@ -20,6 +20,7 @@ namespace hoangngocthe_2123110488.Repository
 
         public async Task<bool> UsernameExistsAsync(string username)
             => await _dbSet.AnyAsync(u => u.Username == username);
-        
+        public async Task<User?> GetByStreamKeyAsync(string key)
+            => await _dbSet.FirstOrDefaultAsync(u => u.StreamKey == key);
     }
 }
